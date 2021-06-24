@@ -1,0 +1,10 @@
+1. 라즈베리파이 실행하고 OS에서 Remove들어가고 Storage는 Volumes boot로 설정하고 진행
+2. OS에서 Lite 32 bit이고 Storage는 Volumes boot로 설정 후 Write로 설치
+  -> USB 포트에서 꺼냇다가 다시 인식
+3. VS code로 들어가서 Folder Open -> boot 선택후 파일추가 해서 ssh 파일과 wpa_supplicant.conf 파일작성
+  -> ssh는 아무것도 없는 빈파일 // wpa* 파일은 hisnet 참고
+4. 전원 연결하면 노란색불 깜박이면서 부팅하고 ssh에 접속을 한다.
+5.터미널에서 ipconfig 작성하고 <기본 게이트웨이 ip> 확인한다 
+6. nmap 실행파일을 이용해 raspberrypi의 ip를 찾아낸다  사용법: nmap -sn <기본게이트웨이 ip>
+7. 라즈베리파이 ip가 어떻게 되는지 확인하고, ssh pi@<라즈베리파이 ip주소>
+8. ppt에 있는 대로 따라하면 됨.
